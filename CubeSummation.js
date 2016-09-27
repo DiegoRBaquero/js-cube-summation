@@ -1,3 +1,5 @@
+if (module) document = false
+
 function log (text) {
   console.log(text)
   if (document) document.querySelector('#output').innerText += text + '\n'
@@ -23,7 +25,7 @@ function correr (input) {
     }
   } catch (err) {
     console.error(err)
-    document.querySelector('#error').innerText = err
+    if (document) document.querySelector('#error').innerText = err
   }
 }
 
@@ -85,4 +87,5 @@ function correrQuery (valores, matriz) {
   log(suma)
 }
 
+module.exports.correr = correr
 
