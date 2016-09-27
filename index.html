@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cube Summation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/g/normalize@3.0,skeleton@2.0">
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <h1 style="text-align: center">Cube Summation</h1>
+    </div>
+    <div class="row">
+        <div class="six columns">
+            <h3>Ingresa el input:</h3>
+            <textarea name="input" id="input" cols="40" rows="30"></textarea><br>
+            <button class="button-primary" onclick="correr(document.querySelector('#input').value)">Correr</button>
+            <p style="color: red" name="error" id="error">
+        </div>
+        <div class="six columns">
+            <h3>Output:</h3>
+            <p name="output" id="output">
+        </div>
+    </div>    
+</div>
+<script src="CubeSummation.js"></script>
+</body>
+</html>
